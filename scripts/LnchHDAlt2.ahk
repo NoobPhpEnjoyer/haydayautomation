@@ -5,7 +5,7 @@
 #SingleInstance FORCE
 if WinExist("Hay Day Alt 2") {
     ; Clause to catch open instances and reset them.
-    WinGet, ID, PID, Hay Day Alt 2
+    WinGet, ID, PID, "Hay Day Alt 2"
     Process, Close, %ID%
     WinWaitClose, Hay Day Alt 2
 }
